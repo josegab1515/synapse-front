@@ -19,10 +19,11 @@
     padding-bottom: 50px;
     margin: auto;
     max-width: 1140px;
+
 }
 
 body {
-    background-color: var(--verde-menta);
+    background-color: #eff5f5;
 }
 
 header {
@@ -41,7 +42,7 @@ header {
     color: var(--branco);
     font-family: var(--fonte-prin);
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 nav ul {
@@ -76,6 +77,7 @@ nav li {
     font-style: italic;
 }
 
+
 .botao a {
     display: inline-block;
     background-color: #2d6c6c;
@@ -86,11 +88,13 @@ nav li {
     border-radius: 30px;
     text-transform: uppercase;
     margin-top: 12px;
+
 }
 
 .categorias {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .containerCatego {
@@ -132,7 +136,8 @@ nav li {
     height: auto;
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 5px;
+    flex-wrap: wrap;
 }
 
 .item {
@@ -192,9 +197,8 @@ nav li {
     background-color: #151e1e;
 }
 
-footer{
+footer {
     background-color: var(--azul-claro);
-    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,8 +206,142 @@ footer{
     padding: 10px;
     border-top: 1px solid #34495E;
 }
-footer p{
+
+footer p {
     color: var(--branco);
     font-family: var(--fonte-prin);
     font-weight: 500;
+}
+
+@media only screen and (max-width: 576px) {
+    header {
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .logoHeader {
+        font-size: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .default {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .frase-banner {
+        font-size: 18px;
+    }
+
+    .containerCatego {
+        margin-bottom: 16px;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 33px;
+    }
+
+    .containerItem {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .item {
+        width: 300px;
+    }
+
+    .imgItem {
+        padding: 0;
+    }
+
+    .item img {
+        display: flex;
+        height: auto;
+        width: 190px;
+    }
+
+
+}
+
+@media only screen and (min-width: 577px) and (max-width: 1200px) {
+    header {
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .logoHeader {
+        font-size: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .default {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .frase-banner {
+        font-size: 25px;
+    }
+
+    .frase-banner .botao a {
+        font-size: 25px;
+    }
+
+    .categorias {
+        gap: 25px;
+    }
+
+    .containerCatego {
+        margin-bottom: 16px;
+        font-size: 20px;
+    }
+
+    .catego-farm {
+        height: 100px;
+        width: 180px;
+
+    }
+
+    .catego-farm span {
+        font-size: 50px;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 33px;
+    }
+
+    .containerItem {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .item {
+        width: 350px;
+    }
+
+    .imgItem {
+        padding: 0;
+    }
+
+    .item img {
+
+        width: 190px;
+    }
+
+    .frase-banner .botao a {
+        margin-top: 25px;
+    }
+
+
+
 }
