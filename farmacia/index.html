@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>farm+caro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <div class="logoHeader">
+                        <span class="material-symbols-outlined">prescriptions</span>
+                        Saúde+ Farma
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Categorias</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                            <li>
+                                <span class="material-symbols-outlined">home</span>
+                                Home
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">star_rate</span>
+                                Avaliações
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">person</span>
+                                Cadastrar
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">logout</span>
+                                Entrar
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">shopping_cart</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container border border-dark banner">
+        <p>"Sua saúde em primeiro lugar! <br>
+            Compre com segurança, qualidade e preços imbatíveis na nossa drogaria online!"</p>
+        <button type="button" class="btn">
+            <a href="#">Entrar</a>
+        </button>
+    </section>
+    <section class="container categorias">
+        <div class="containerCatego">
+            <div class="catego-farm">
+                <span class="material-symbols-outlined">pill</span>
+            </div>
+            <span class="infoMedicamento">Medicamentos</span>
+        </div>
+        <div class="containerCatego">
+            <div class="catego-farm">
+                <span class="material-symbols-outlined">sports_martial_arts</span>
+            </div>
+            <span class="infoMedicamento">Vitaminas</span>
+        </div>
+        <div class="containerCatego">
+            <div class="catego-farm">
+                <span class="material-symbols-outlined">partly_cloudy_day</span>
+            </div>
+            <span class="infoMedicamento">Protetores</span>
+        </div>
+        <div class="containerCatego">
+            <div class="catego-farm">
+                <span class="material-symbols-outlined">family_restroom</span>
+            </div>
+            <span class="infoMedicamento">Infantil</span>
+        </div>
+        <div class="containerCatego">
+            <div class="catego-farm">
+                <span class="material-symbols-outlined">vaccines</span>
+            </div>
+            <span class="infoMedicamento">Aparelhos</span>
+        </div>
+        <div class="containerCatego">
+            <div class="catego-farm">
+                <span class="material-symbols-outlined">nature</span>
+            </div>
+            <span class="infoMedicamento">Naturais</span>
+        </div>
+    </section>
+
+    <p class=" container title">Aparelhos</p>
+    <section class="container catego aparelhos">
+        <div class="item">
+            <span class="material-symbols-outlined favorito">favorite</span>
+            <div class="imgItem">
+                <img class="img-fluid"
+                    src="data:image/jpeg;base64,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"
+                    alt="">
+            </div>
+            <span class="preco">
+                R$300,95
+            </span>
+            <span class="descricao">
+                Bola Ginastica
+            </span>
+            <button type="button" class="btn">
+                <a href="#">Comprar</a>
+            </button>
+        </div>
+        <div class="item">
+            <span class="material-symbols-outlined favorito">favorite</span>
+            <div class="imgItem">
+                <img class="img-fluid"
+                    src="https://d225afdvrjsxie.cloudfront.net/Custom/Content/Products/10/09/100977_aparelho-medidor-de-pressao-arterial-digital-pulso-g-tech-gp-400_s1_637805397861633041.webp"
+                    alt="">
+            </div>
+            <span class="preco">
+                R$975,99
+            </span>
+            <span class="descricao">
+                Medidor De Pressão
+            </span>
+            <button type="button" class="btn">
+                <a href="#">Comprar</a>
+            </button>
+        </div>
+        <div class="item">
+            <span class="material-symbols-outlined favorito">favorite</span>
+            <div class="imgItem">
+                <img class="img-fluid"
+                    src="https://d225afdvrjsxie.cloudfront.net/Custom/Content/Products/69/26/69266_oximetro-digital-de-pulso-portatil-de-dedo-g-tech-oled-graph-1-unidade_s3_637926314309527598.webp"
+                    alt="">
+            </div>
+            <span class="preco">
+                R$3058,95
+            </span>
+            <span class="descricao">
+                Oximetro De Pulso
+            </span>
+            <button type="button" class="btn">
+                <a href="#">Comprar</a>
+            </button>
+        </div>
+        <div class="item">
+            <span class="material-symbols-outlined favorito">favorite</span>
+            <div class="imgItem">
+                <img class="img-fluid"
+                    src="https://d225afdvrjsxie.cloudfront.net/Custom/Content/Products/97/25/97259_balanca-digital-multilaser-eatsmart-preta-hc024-p102255_s2_637713842981923000.webp"
+                    alt="">
+            </div>
+            <span class="preco">
+                R$99,95
+            </span>
+            <span class="descricao">
+                Balança Digital
+            </span>
+            <button type="button" class="btn">
+                <a href="#">Comprar</a>
+            </button>
+        </div>
+        <div class="item">
+            <span class="material-symbols-outlined favorito">favorite</span>
+            <div class="imgItem">
+                <img class="img-fluid"
+                    src="https://d225afdvrjsxie.cloudfront.net/Custom/Content/Products/10/88/108897_espacador-clear-infantil-g-tech_s1_637980721364666704.webp"
+                    alt="">
+            </div>
+            <span class="preco">
+                R$9999,99
+            </span>
+            <span class="descricao">
+                Espacador clear
+            </span>
+            <button type="button" class="btn">
+                <a href="#">Comprar</a>
+            </button>
+        </div>
+        <div class="item">
+            <span class="material-symbols-outlined favorito">favorite</span>
+            <div class="imgItem">
+                <img class="img-fluid"
+                    src="https://paguemenos.vtexassets.com/arquivos/ids/906773-400-400/aspirador-nasal-kuka-principal.png?v=638563868648000000"
+                    alt="">
+            </div>
+            <span class="preco">
+                R$658972658,99
+            </span>
+            <span class="descricao">
+                Aspirador Nasal
+            </span>
+            <button type="button" class="btn">
+                <a href="#">Comprar</a>
+            </button>
+        </div>
+    </section>
+    <p class=" container title">Infantil</p>
+    <section class="container catego infantil">
+
+        <div class="item">
+            <span class="material-symbols-outlined favorito">favorite</span>
+            <div class="imgItem">
+                <img class="img-fluid"
+                    src="https://d225afdvrjsxie.cloudfront.net/Custom/Content/Products/66/36/66368_condicionador-infantil-salon-line-baby-todecachinho-com-300ml_z1_638025458887697656.webp"
+                    alt="">
+            </div>
+            <span class="preco">
+                R$4,95
+            </span>
+            <span class="descricao">
+                Condicionador
+            </span>
+            <button type="button" class="btn">
+                <a href="#">Comprar</a>
+            </button>
+        </div>
+        <div class="item">
+            <span class="material-symbols-outlined favorito">favorite</span>
+            <div class="imgItem">
+                <img class="img-fluid"
+                    src="https://d225afdvrjsxie.cloudfront.net/Custom/Content/Products/13/22/132226_tipoia-estabilizadora-velpeau-infantil-com-orificio-azul-marinho_z1_638762738110555402.webp"
+                    alt="">
+            </div>
+            <span class="preco">
+                R$500,95
+            </span>
+            <span class="descricao">
+                Tipoia Estabilizadora
+            </span>
+            <button type="button" class="btn">
+                <a href="#">Comprar</a>
+            </button>
+        </div>
+        <div class="item">
+            <span class="material-symbols-outlined favorito">favorite</span>
+            <div class="imgItem">
+                <img class="img-fluid"
+                    src="https://d225afdvrjsxie.cloudfront.net/Custom/Content/Products/51/89/51899_sabonete-liquido-infantil-huggies-cha-de-camomila-com-200ml_z5_638259798614092141.webp"
+                    alt="">
+            </div>
+            <span class="preco">
+                R$50,95
+            </span>
+            <span class="descricao">
+                Sabonete Líquido
+            </span>
+            <button type="button" class="btn">
+                <a href="#">Comprar</a>
+            </button>
+        </div>
+        <div class="item">
+            <span class="material-symbols-outlined favorito">favorite</span>
+            <div class="imgItem">
+                <img class="img-fluid"
+                    src="https://d225afdvrjsxie.cloudfront.net/Custom/Content/Products/10/10/101064_escova-de-dente-colgate-infantil-smiles-teen-titans-para-6-anos-com-1-unidade-p103839_z1_638198518176594083.webp"
+                    alt="">
+            </div>
+            <span class="preco">
+                R$860,95
+            </span>
+            <span class="descricao">
+                Escova de dente
+            </span>
+            <button type="button" class="btn">
+                <a href="#">Comprar</a>
+            </button>
+        </div>
+        <div class="item">
+            <span class="material-symbols-outlined favorito">favorite</span>
+            <div class="imgItem">
+                <img class="img-fluid"
+                    src="https://d225afdvrjsxie.cloudfront.net/Custom/Content/Products/57/34/57343_formula-infantil-nanlac-confor-800g_z4_637874444138372934.webp"
+                    alt="">
+            </div>
+            <span class="preco">
+                R$12885,95
+            </span>
+            <span class="descricao">
+                Fórmula Infantil
+            </span>
+            <button type="button" class="btn">
+                <a href="#">Comprar</a>
+            </button>
+        </div>
+        <div class="item">
+            <span class="material-symbols-outlined favorito">favorite</span>
+            <div class="imgItem">
+                <img class="img-fluid"
+                    src="https://d225afdvrjsxie.cloudfront.net/Custom/Content/Products/11/92/119257_copo-de-treinamento-mam-trainer-night-com-alca-220ml-p101488_s1_638197561297196657.webp"
+                    alt="">
+            </div>
+            <span class="preco">
+                R$12885,95
+            </span>
+            <span class="descricao">
+                Copo de Transição
+            </span>
+            <button type="button" class="btn">
+                <a href="#">Comprar</a>
+            </button>
+        </div>
+
+    </section>
+    <footer class="py-3">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 ">Avaliações</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 ">Cadastrar</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 ">Entrar</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 "> <span class="material-symbols-outlined">shopping_cart</span></a></li>
+        </ul>
+        <p class="text-center">© 2025 Saude+Caro, Inc</p>
+    </footer>
+</body>
+
+</html>

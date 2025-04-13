@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+
+    --fonte-titulo: 'Montserrat', sans-serif;
+    --fonte-texto: 'Roboto', sans-serif;
+    --tamanho-titulo: 32px;
+    --tamanho-subtitulo: 24px;
+    --tamanho-texto: 16px;
+    --tamanho-menor: 14px;
+    --cor-primaria: #2196F3;
+    --cor-secundaria: #4CAF50;
+    --cor-fundo: #ffffff;
+    --cor-texto: #333333;
+    --cor-destaque: #FFA726;
+    --cor-suave: #f5f5f5;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--cor-fundo);
+}
+
+.logoHeader {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    color: var(--cor-suave);
+}
+
+.logoHeader span {
+    font-size: 27px;
+}
+
+.bg-navbar {
+    background-color: var(--cor-primaria);
+    border-bottom: var(--cor-secundaria) 1px solid;
+}
+
+.navbar-toggler {
+    background-color: var(--cor-fundo) !important;
+}
+
+
+.offcanvas-body ul {
+    display: flex;
+    color: var(--cor-suave);
+    gap: 20px;
+    justify-content: center;
+}
+
+.offcanvas-body li {
+    display: flex;
+    font-family: var(--fonte-texto);
+    font-size: 15px;
+    list-style: none;
+    align-items: center;
+}
+
+.banner{
+    background-image: url("https://cdn.pixabay.com/photo/2021/11/02/10/04/sky-6762844_1280.jpg");
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+.banner button{
+    outline: none;
+    border: none;
+}
+button a {
+    display: inline-block;
+    background-color: #2d6c6c;
+    font-size: 15px;
+    color: var(--cor-suave);
+    text-decoration: none;
+    padding: 10px 30px 10px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: var(--fonte-texto);
+}
+.categorias{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 170px);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.containerCatego {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: var(--fonte-titulo);
+    font-size: 13px;
+    color: var(--cor-texto);
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+}
+
+.catego-farm {
+    display: flex;
+    background-color: #138686;
+    height: 70px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-suave);
+    border-radius: 15px;
+    border: 1px solid var(--cor-secundaria);
+}
+
+.catego-farm span {
+    font-size: 40px;
+}
+
+.catego{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.title {
+    font-family: var(--fonte-titulo);
+    font-weight: 900;
+    font-size: 25px;
+    margin-top: 30px;
+   
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid #808080;
+}
+
+.item .favorito {
+    display: flex;
+    color: red;
+    justify-content: flex-end;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.imgItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+
+}
+
+.preco {
+    font-family: var(--fonte-titulo);
+    font-weight: 900;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+
+.descricao {
+    padding-left: 10px;
+    font-family: var(--fonte-texto);
+    color: #000833;
+    font-weight: 600;
+
+}
+
+
+.item button a{
+    margin-bottom: 16px;
+}
+footer{
+    background-color: var(--cor-primaria);
+    margin-top: 20px;
+}
+footer, 
+footer li a{
+    color: var(--cor-suave) !important;
+}
+
+
+
+
+
+
+/* abaixo not */
+@media only screen and (max-width: 992px) {
+    .offcanvas-body li{
+        color: var(--cor-texto);
+    }
+    .categorias{
+        grid-template-columns: repeat(auto-fill, 170px);
+    }
+    .catego{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+/* cell */
+@media only screen and (min-width:200px) and (max-width: 799px) {
+
+    .categorias{
+        grid-template-columns: repeat(3, 130px);
+    }
+}
+
