@@ -1,0 +1,584 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-btn: #C1440E;
+    --cor-titulo: #4E342E;
+    --cor-texto: #5C5C5C;
+    --cor-bgPri: #F5F5DC;
+    --cor-brSec: #FAF3E0;
+    --fonte-project: "Roboto", sans-serif;
+    --cor-preto: #111111;
+
+}
+
+header {
+    font-family: var(--fonte-project);
+    color: var(--cor-preto);
+
+}
+
+.bg-claro {
+    background-color: var(--cor-bgPri) !important;
+}
+
+.bg-claro2 {
+    background-color: #FAF3E0 !important;
+}
+
+.nav-item a {
+    color: var(--cor-texto) !important;
+}
+
+.navbar-brand img {
+    height: 34px;
+
+}
+
+.pg1 {
+    display: flex;
+    height: calc(100vh - 60px);
+    justify-content: center;
+    align-items: center;
+}
+
+.defaultMargin {
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.pagina1 {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.introducao {
+    padding-right: 30px;
+    display: grid;
+    grid-template-rows: 130px 124px 60px;
+    grid-template-columns: 1fr;
+    align-self: center;
+}
+
+.introducaoTitle {
+    overflow-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--cor-titulo);
+    font-family: var(--fonte-project);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -1px;
+
+}
+
+.introducaoParagrafo {
+    color: var(--cor-texto);
+    font-family: var(--fonte-project);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.introducao button {
+    display: flex;
+    background-color: var(--cor-btn);
+    color: #FFFFFF;
+    font-family: var(--fonte-project);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    padding: 12px 40px;
+    border: none;
+    gap: 5px;
+    align-self: center;
+}
+
+.introducao button i {
+    font-size: 20px;
+    position: relative;
+    display: block;
+
+}
+
+.introducao button:hover {
+    background-color: #ff4500;
+}
+
+.introducao button:active {
+    background-color: #eead2d !important;
+}
+
+.introducao .btnespan {
+    display: flex;
+    gap: 15px;
+
+}
+
+.introducao span {
+    color: var(--cor-texto);
+    font-family: var(--fonte-project);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    display: block;
+    align-self: center;
+}
+
+.introducaoimg img {
+    object-position: center top;
+    border-radius: 12px;
+
+}
+
+.informacoesTitle {
+    color: var(--cor-titulo);
+    text-align: center;
+    font-family: var(--fonte-project);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 60px;
+}
+
+.informacoesCard {
+    border: none !important;
+    background-color: #FAF3E0 !important;
+
+}
+
+.informacoesCards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.informacoesCard img {
+    height: 48px;
+    width: 48px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.informacoesBody h5 {
+    color: var(--cor-titulo);
+    text-align: center;
+    font-family: var(--fonte-project);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.informacoesBody p {
+    color: var(--cor-texto);
+    text-align: center;
+    font-family: var(--fonte-project);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.destaqueChurras {
+    display: flex;
+    height: auto;
+}
+
+.destaque {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.destaqueInfos {
+    align-self: center;
+}
+
+.destaqueImg img {
+    border-radius: 15px;
+
+}
+
+.destaqueTitle {
+    color: var(--cor-titulo);
+    font-family: var(--fonte-project);
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.destaqueParagrafo {
+    color: var(--cor-texto);
+    font-family: var(--fonte-project);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.destaqueInfos ul {
+    padding-left: 1rem;
+    margin-bottom: 20px;
+}
+
+.destaqueInfos li {
+    color: var(--cor-texto);
+    font-family: var(--fonte-project);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.destaque button {
+    display: flex;
+    background-color: var(--cor-btn);
+    color: #FFFFFF;
+    font-family: var(--fonte-project);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    padding: 12px 40px;
+    border: none;
+    gap: 5px;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+.destaque button i {
+    font-size: 20px;
+    position: relative;
+    display: block;
+
+}
+
+.destaque button:hover {
+    background-color: #ff4500;
+}
+
+.destaque button:active {
+    background-color: #eead2d !important;
+}
+
+.destaque .btnespan {
+    display: flex;
+    justify-content: center;
+}
+
+.avaliacoesCards .card-group {
+    gap: 30px;
+}
+
+.informacoesTitle {
+    color: var(--cor-titulo);
+    text-align: center;
+    font-family: var(--fonte-project);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 60px;
+}
+
+.avaliacaoBody p {
+    color: #000000;
+    font-family: var(--fonte-project);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    word-break: normal;
+}
+
+.estrelaAmarela {
+    color: #FFDD00;
+    font-size: 17px;
+}
+
+.infoPessoaAvaliacao {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 15px;
+}
+
+.pessoaAvaliacao {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pessoaAvaliacao img {
+    height: inherit;
+    width: inherit;
+    border-radius: 56px;
+
+}
+
+.nomeAvaliacao {
+    display: block;
+    color: #111;
+    font-family: var(--fonte-project);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.avaliacoesCard {
+    gap: 10px;
+    padding: 12px;
+    background-color: #FFF8F0 !important;
+    border: 1px solid #dec9ac !important;
+    border-radius: 12px !important;
+}
+
+.trabalhe {
+    margin-top: 25px;
+    display: flex;
+    gap: 150px;
+}
+
+.trabalheTitle {
+    color: #111;
+    font-family: var(--fonte-project);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.trabalheForms {
+    width: 500px;
+}
+
+.trabalheForms span h5 {
+    color: #111;
+    font-family: var(--fonte-project);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 0;
+}
+
+.trabalheForms span p {
+    color: #111;
+    font-family: var(--fonte-project);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+}
+
+.footerBor {
+    padding-top: 25px;
+
+}
+
+footer span {
+    color: black;
+    font-family: var(--fonte-project);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+footer i {
+    color: black;
+    font-size: 17px;
+}
+
+@media (min-width: 992px) {
+    .informacoesCards {
+        flex-direction: row;
+    }
+
+    .informacoesCard {
+        flex: 1;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+
+    .pg1 {
+        height: auto;
+    }
+
+    .pagina1 {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .introducaoimg img {
+        height: 40vh;
+        width: 40vh;
+        margin-bottom: 12px;
+        object-position: center bottom;
+
+    }
+
+    .introducaoTitle,
+    .introducaoParagrafo {
+        text-align: center;
+    }
+
+    .btnespan {
+        margin-top: -50px;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: row;
+    }
+    .destaque{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    .destaqueImg img{
+        height: 40vh;
+        width: 40vh;
+        object-position: center bottom;
+
+
+    }
+    .destaqueInfos{
+        gap: 20px;
+    }
+    .destaqueTitle{
+        text-align: center;
+    }
+    .destaque .btnespan {
+        margin-top: 25px;
+    }
+
+    .informacoesTitle {
+        margin-bottom: 30px;
+    }
+    .trabalhe {
+        gap: 20px;
+    }
+
+    .trabalheForms span h5 {
+
+        font-size: 12px;
+    }
+    
+    .trabalheForms span p {
+        font-size: 12px;
+    
+    }
+    .trabalheTitle {
+        font-size: 14px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .pg1 {
+        height: auto;
+    }
+
+    .pagina1 {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .introducaoimg img {
+        height: 40vh;
+        width: 40vh;
+        margin-bottom: 12px;
+        object-position: center bottom;
+
+    }
+
+    .introducaoTitle,
+    .introducaoParagrafo {
+        text-align: center;
+    }
+
+    .btnespan {
+        margin-top: -50px;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: row;
+    }
+    .destaque{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    .destaqueImg img{
+        height: 40vh;
+        width: 40vh;
+        object-position: center bottom;
+
+
+    }
+    .destaqueInfos{
+        gap: 20px;
+    }
+    .destaqueTitle{
+        text-align: center;
+    }
+    .destaque .btnespan {
+        margin-top: 25px;
+    }
+
+    .informacoesTitle {
+        margin-bottom: 30px;
+    }
+    .trabalhe {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .trabalheForms{
+        padding: 10px;
+    }
+
+    .trabalheForms span h5 {
+        font-size: 12px;
+    }
+    
+    .trabalheForms span p {
+        font-size: 12px;
+    
+    }
+    .trabalheTitle {
+        font-size: 14px;
+    }
+    .avaliacoesCards{
+        display: flex;
+        flex-direction: row;
+    }
+}
